@@ -11,3 +11,17 @@ same goes for pages and anything else you want to create
 
  - home folder
    - home.jsx
+
+
+*** 
+create branch
+
+use 
+  git branch -m (name) e.g git branch -m destiny
+  git checkout (name) e.g git checkout destiny to verify 
+
+when done then push
+use 
+  git add . 
+  git commit -m "commit message" 
+  git push -u origin (name) e.g git push -u origin destiny
