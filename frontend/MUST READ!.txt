@@ -1,0 +1,13 @@
+Always create a folder first before the file for each components you want to create
+
+for example:
+
+ - navbar folder 
+   - navbar.jsx
+ - footer folder
+   - footer.jsx
+
+same goes for pages and anything else you want to create 
+
+ - home folder
+   - home.jsx
