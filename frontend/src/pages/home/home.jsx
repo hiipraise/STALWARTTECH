@@ -10,6 +10,7 @@ const Home = () => {
 
   return (
     <main className="">
+      <Navbar />
       <div>
         <div className="hidden md:block absolute left-0 translate-y-60">
           <BlurBg />
@@ -26,8 +27,8 @@ const Home = () => {
           <BlurBg />
         </div>
       </div>
-      <div className="flex flex-col justify-center gap-16">
-        <div className="flex flex-col gap-8 items-center px-[5vw]">
+      <div className="flex flex-col justify-center gap-16 mt-16">
+        <div className="flex flex-col gap-8 items-center px-[4vw] md:px-[8vw]">
           <h1 className="text-3xl md:text-6xl text-center font-bold bg-gradient-to-r from-[#A3E2BB] to-[#EEEEFF] bg-clip-text text-transparent md:">
             From Software to AI, embedded systems & IoT Solution, WE TRIVE!
           </h1>
@@ -37,10 +38,10 @@ const Home = () => {
             shaping a future where innovation is accessible to all.
           </p>
           <div className="flex items-center justify-center gap-[3vmin]">
-            <button className="bg-[#A3E2BB] border border-[#A3E2BB] font-medium rounded-full py-2 px-4 text-[#19192b]">
+            <button className="bg-[#A3E2BB] border border-[#A3E2BB] font-medium rounded-full py-2 px-4 text-[#19192b] hover:shadow-[0_0.4rem_0_0_#000]">
               Book a Call
             </button>
-            <button className="bg-transparent border border-[#A3E2BB] font-medium text-[#A3E2BB] rounded-full py-2 px-4">
+            <button className="relative overflow-hidden px-4 py-2 border border-[#78f6cb] text-[#78f6cb] rounded-full before:absolute before:left-0 before:bottom-0 before:w-full before:h-0 before:bg-[#78f6cb20] before:z-[-1] before:transition-[height] before:duration-300 hover:before:h-full">
               Get a Quote
             </button>
           </div>
@@ -48,8 +49,8 @@ const Home = () => {
         <div>
           <IconScroller />
         </div>
-        <div className="flex flex-col gap-5">
-          <div className="px-[5vw] flex flex-col gap-3">
+        <div className="flex flex-col gap-10">
+          <div className="px-[5vw] md:px-[20vw] flex flex-col gap-3">
             <p className="text-center text-[#EEEEFF] text-2xl md:text-3xl">
               IT Solutions
             </p>
