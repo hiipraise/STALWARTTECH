@@ -3,8 +3,8 @@ import React from "react";
 const BlurBg = () => {
   return (
     <svg
-      width="364"
-      height="429"
+      width="270"
+      height="355"
       viewBox="0 0 364 429"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ const BlurBg = () => {
           ry="253.553"
           transform="matrix(-0.499535 -0.866294 -0.866294 0.499535 392.83 217.311)"
           fill="url(#paint0_radial_1_183)"
-          fill-opacity="0.7"
+          fillOpacity="0.7"
         />
       </g>
       <defs>
@@ -28,9 +28,9 @@ const BlurBg = () => {
           width="530.179"
           height="428.507"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -50,8 +50,8 @@ const BlurBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(149.667 253.553) rotate(90) scale(253.553 149.667)"
         >
-          <stop stop-color="#A3E2BB" />
-          <stop offset="1" stop-color="#A3E2BB" stop-opacity="0" />
+          <stop stopColor="#A3E2BB" />
+          <stop offset="1" stopColor="#A3E2BB" stopOpacity="0" />
         </radialGradient>
       </defs>
     </svg>
