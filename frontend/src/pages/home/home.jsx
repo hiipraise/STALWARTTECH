@@ -3,6 +3,7 @@ import IconScroller from "../../components/iconscroll/iconscroller";
 import BlurBg from "../../assets/icons/blurbg";
 import { itsolutionsData } from "../../data/stalwart";
 import ItSolutions from "../../components/itsolutions/itsolutions";
+import Navbar from "../../components/navbar/navbar";
 
 const Home = () => {
   const scrollRef = useRef(null);
