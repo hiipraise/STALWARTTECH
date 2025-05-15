@@ -12,9 +12,9 @@ const DollarSignSvg = () => {
       <path
         d="M26.5 49C26.5 53.9706 30.5294 58 35.5 58H44.5C49.4706 58 53.5 53.9706 53.5 49C53.5 44.0294 49.4706 40 44.5 40H35.5C30.5294 40 26.5 35.9706 26.5 31C26.5 26.0294 30.5294 22 35.5 22H44.5C49.4706 22 53.5 26.0294 53.5 31M40 17.5V62.5"
         stroke="url(#paint0_linear_14_52)"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -25,8 +25,8 @@ const DollarSignSvg = () => {
           y2="57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A3E2BB" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#A3E2BB" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
       </defs>
     </svg>
