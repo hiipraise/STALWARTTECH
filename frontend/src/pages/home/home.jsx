@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import IconScroller from "../../components/iconscroll/iconscroller";
-import BlurBg from "../../assets/icons/blurbg";
 import { itsolutionsData } from "../../data/stalwart";
 import ItSolutions from "../../components/itsolutions/itsolutions";
 import Navbar from "../../components/navbar/navbar";
 import Services from "../../components/services/services";
+import ColorBlurbg from "../../components/blurbg/colorblurbg";
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -13,23 +13,8 @@ const Home = () => {
     // remove pb-10 later on
     <main className="pb-10">
       <Navbar />
-      <div>
-        <div className="hidden md:block absolute left-0 translate-y-60">
-          <BlurBg />
-        </div>
-        <div className="hidden md:block absolute left-0">
-          <BlurBg />
-        </div>
-      </div>
-      <div>
-        <div className="hidden md:block absolute right-0 rotate-180 translate-y-56">
-          <BlurBg />
-        </div>
-        <div className="hidden md:block absolute right-0 rotate-180">
-          <BlurBg />
-        </div>
-      </div>
-      <div className="flex flex-col justify-center gap-16 mt-16">
+      <ColorBlurbg />
+      <div className="flex flex-col justify-center gap-16 mt-16 z-40">
         <div className="flex flex-col gap-8 items-center px-[4vw] md:px-[8vw]">
           <h1 className="text-3xl md:text-6xl text-center font-bold bg-gradient-to-r from-[#A3E2BB] to-[#EEEEFF] bg-clip-text text-transparent md:">
             From Software to AI, embedded systems & IoT Solution, WE TRIVE!
@@ -84,7 +69,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#19192B] w-full overflow-hidden space-y-10">
+        <div className="bg-[rgba(25,25,43,20%)] w-full overflow-hidden space-y-10 backdrop-blur-2xl p-2">
           <div className="flex justify-center flex-col items-center px-[5vw]">
             <h1 className="text-center text-[#EEEEFF] text-2xl md:text-3xl">
               Our Services
