@@ -1,22 +1,19 @@
-import React, { useRef } from "react";
+import React from "react";
 import IconScroller from "../../components/iconscroll/iconscroller";
-import { itsolutionsData } from "../../data/stalwart";
-import ItSolutions from "../../components/itsolutions/itsolutions";
 import Navbar from "../../components/navbar/navbar";
 import Services from "../../components/services/services";
 import ColorBlurbg from "../../components/blurbg/colorblurbg";
+import AboutUs from "../../components/aboutus/aboutus";
+import MainItsolutions from "../../components/itsolutions/mainitsolutions";
 
 const Home = () => {
-  const scrollRef = useRef(null);
-
   return (
-    // remove pb-10 later on
-    <main className="pb-10">
+    <main className="">
       <Navbar />
       <ColorBlurbg />
-      <div className="flex flex-col justify-center gap-16 mt-16 z-40">
-        <div className="flex flex-col gap-8 items-center px-[4vw] md:px-[8vw]">
-          <h1 className="text-3xl md:text-6xl text-center font-bold bg-gradient-to-r from-[#A3E2BB] to-[#EEEEFF] bg-clip-text text-transparent md:">
+      <div className="flex flex-col justify-center gap-16 mt-16 mb-10 z-40">
+        <div className="flex flex-col gap-8 items-center px-[5vw] md:px-[10vw]">
+          <h1 className="font-orbitron text-3xl md:text-6xl text-center font-bold bg-gradient-to-r from-[#A3E2BB] to-[#EEEEFF] bg-clip-text text-transparent md:">
             From Software to AI, embedded systems & IoT Solution, WE TRIVE!
           </h1>
           <p className="text-[#EEEEFF] md:text-xl text-center">
@@ -36,45 +33,13 @@ const Home = () => {
         <div>
           <IconScroller />
         </div>
-        <div className="flex flex-col gap-10">
-          <div className="px-[5vw] md:px-[20vw] flex flex-col gap-3">
-            <p className="text-center text-[#EEEEFF] text-2xl md:text-3xl">
-              IT Solutions
-            </p>
-            <p className="text-center bg-gradient-to-r from-[#A3E2BB] to-[#EEEEFF] bg-clip-text text-transparent md:text-xl">
-              Excellence Exemplified: Most Productive IT Service Provider for
-              Companies, Businesses & Individual
-            </p>
-          </div>
-          <div className="relative">
-            <div
-              className="flex gap-4 px-[5vw] pl-[5vw] justify-start lg:justify-center items-center overflow-x-auto md:overflow-x-auto lg:overflow-x-hidden scroll-smooth snap-x md:snap-none"
-              style={{
-                WebkitOverflowScrolling: "touch",
-                scrollbarWidth: "none",
-                msOverflowStyle: "none",
-              }}
-              ref={scrollRef}
-            >
-              {itsolutionsData.map((product) => (
-                <div key={product.id} className="snap-center shrink-0">
-                  <ItSolutions
-                    key={product.id}
-                    svg={product.svg}
-                    headtext={product.headtext}
-                    detail={product.detail}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <MainItsolutions />
         <div className="bg-[rgba(25,25,43,20%)] w-full overflow-hidden space-y-10 backdrop-blur-2xl p-2">
-          <div className="flex justify-center flex-col items-center px-[5vw]">
+          <div className="px-[3vw] md:px-[22vw] flex flex-col gap-3">
             <h1 className="text-center text-[#EEEEFF] text-2xl md:text-3xl">
               Our Services
             </h1>
-            <p className="text-center bg-gradient-to-r from-[#A3E2BB] to-[#EEEEFF] bg-clip-text text-transparent md:text-xl">
+            <p className="font-orbitron text-center bg-gradient-to-r from-[#A3E2BB] to-[#EEEEFF] bg-clip-text text-transparent text-xl md:text-4xl">
               CRAFTING EXCELLENCE, TAILORED FOR YOU: EXPLORE OUR SPECIALIZED
               SERVICES.
             </p>
@@ -109,6 +74,9 @@ const Home = () => {
               }
             />
           </div>
+        </div>
+        <div className="px-[5vw]">
+          <AboutUs />
         </div>
       </div>
     </main>

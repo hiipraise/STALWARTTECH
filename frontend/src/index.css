@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,4 +12,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar but keep horizontal scroll */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.clip-slant {
+  clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%);
 }

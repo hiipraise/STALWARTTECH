@@ -17,9 +17,11 @@ const Services = ({ number, title, description }) => {
     <div className="w-full max-w-full">
       <div className="flex flex-col gap-[3vmin]">
         <div className="flex w-full items-center justify-center space-x-4 md:justify-between">
-          <div className="w-full flex gap-3 items-center">
-            <h1 className="text-2xl font-normal text-white">{number}</h1>
-            <h1 className="text-xl font-medium bg-gradient-to-r from-[rgb(255,255,255)] to-[#9C9C9C] bg-clip-text text-transparent">
+          <div className="w-full flex gap-3 md:gap-10 items-center">
+            <h1 className="text-xl md:text-2xl font-normal text-white font-orbitron">
+              {number}
+            </h1>
+            <h1 className="font-orbitron text-lg md:text-2xl font-medium bg-gradient-to-r from-[rgb(255,255,255)] to-[#9C9C9C] bg-clip-text text-transparent">
               {title}
             </h1>
           </div>
@@ -32,7 +34,7 @@ const Services = ({ number, title, description }) => {
           <h1 className="text-lg font-normal text-[#9C9C9C]">{description}</h1>
         </div>
 
-        <div className="w-full overflow-x-auto snap-x scroll-smooth md:overflow-visible md:snap-none">
+        <div className="scrollbar-hide w-full overflow-x-auto snap-x scroll-smooth md:overflow-visible md:snap-none">
           <div className="flex gap-4 pb-2 pt-2">
             {images.map((img, idx) => (
               <div

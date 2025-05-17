@@ -105,7 +105,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-[80px] left-0 w-full bg-[#19192B]/70 backdrop-blur-md z-40">
+        <div className="md:hidden absolute top-[80px] left-0 w-full bg-[#19192B]/70 backdrop-blur-2xl z-40">
           <div className="flex flex-col space-y-4 p-6">
             <a href="#" className="block text-[#78f6cb]">
               Home

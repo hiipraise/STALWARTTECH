@@ -12,6 +12,9 @@ export default {
       animation: {
         "scroll-x": "scrollX 30s linear infinite",
       },
+      fontFamily: {
+        orbitron: ["Orbitron", "sans-serif"],
+      },
     },
   },
   plugins: [],
