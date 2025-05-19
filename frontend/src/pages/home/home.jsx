@@ -2,6 +2,8 @@ import React from "react";
 import Services from "../../components/services";
 
 const Home = () => {
+
+  
   return (
     <div className="bg-[#19192B] w-full overflow-hidden">
       <div className="flex justify-center flex-col items-center p-4">
@@ -15,7 +17,7 @@ const Home = () => {
         <Services number={"01"} title={"Expertise Services"} description={"Custom blockchain solutions built for enterprise needs with smart contract functionality to revolutionize your business processes."} />
         <Services number={"02"} title={"Expertise Services"} description={"Native and cross-platform mobile applications that deliver exceptional user experience across iOS and Android devices."} />
         <Services number={"03"} title={"Process"} description={"Leverage the power of artificial intelligence to automate processes, gain insights, and create intelligent systems for your business."} />
-        <Services number={"04"} title={"Mobile App Development"} description={"Creating responsive, intuitive, and engaging user interfaces with modern frameworks and best practices in web development."} />
+      
       </div>
     </div>
   );
