@@ -3,7 +3,7 @@ import ImgAnime from "./imganime";
 
 const AboutUs = () => {
   return (
-    <div className="bg-[rgba(25,25,43,20%)] w-full overflow-hidden space-y-14 backdrop-blur-2xl p-2">
+    <div className="bg-[rgba(25,25,43,20%)] w-full overflow-hidden space-y-14 backdrop-blur-2xl">
       <div className="px-[3vw] md:px-[22vw] flex flex-col gap-3">
         <h1 className="text-center text-[#EEEEFF] text-2xl md:text-3xl">
           About Us

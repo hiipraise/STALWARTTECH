@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import IconScroller from "../../components/iconscroll/iconscroller";
 import Navbar from "../../components/navbar/navbar";
 import Services from "../../components/services/services";
@@ -7,6 +7,7 @@ import AboutUs from "../../components/aboutus/aboutus";
 import MainItsolutions from "../../components/itsolutions/mainitsolutions";
 
 const Home = () => {
+  const [openAccordion, setOpenAccordion] = useState(null);
   return (
     <main className="">
       <Navbar />
@@ -34,48 +35,50 @@ const Home = () => {
           <IconScroller />
         </div>
         <MainItsolutions />
-        <div className="bg-[rgba(25,25,43,20%)] w-full overflow-hidden space-y-10 backdrop-blur-2xl p-2">
-          <div className="px-[3vw] md:px-[22vw] flex flex-col gap-3">
-            <h1 className="text-center text-[#EEEEFF] text-2xl md:text-3xl">
-              Our Services
-            </h1>
-            <p className="font-orbitron text-center bg-gradient-to-r from-[#A3E2BB] to-[#EEEEFF] bg-clip-text text-transparent text-xl md:text-4xl">
-              CRAFTING EXCELLENCE, TAILORED FOR YOU: EXPLORE OUR SPECIALIZED
-              SERVICES.
-            </p>
-          </div>
-          <div className="w-full max-w-full px-[3vw] space-y-5">
-            <Services
-              number={"01"}
-              title={"Expertise Services"}
-              description={
-                "Custom blockchain solutions built for enterprise needs with smart contract functionality to revolutionize your business processes."
-              }
-            />
-            <Services
-              number={"02"}
-              title={"Expertise Services"}
-              description={
-                "Native and cross-platform mobile applications that deliver exceptional user experience across iOS and Android devices."
-              }
-            />
-            <Services
-              number={"03"}
-              title={"Process"}
-              description={
-                "Leverage the power of artificial intelligence to automate processes, gain insights, and create intelligent systems for your business."
-              }
-            />
-            <Services
-              number={"04"}
-              title={"Mobile App Development"}
-              description={
-                "Creating responsive, intuitive, and engaging user interfaces with modern frameworks and best practices in web development."
-              }
-            />
-          </div>
+         <div className="">
+      <div className="bg-[rgba(25,25,43,20%)] w-full overflow-hidden space-y-14 backdrop-blur-2xl p-[5vw]">
+        <div className="px-[5vw] flex flex-col gap-3">
+          <h1 className="text-center text-[#EEEEFF] text-2xl md:text-3xl">
+            Our Services
+          </h1>
+          <p className="font-orbitron text-center bg-gradient-to-r from-[#A3E2BB] to-[#EEEEFF] bg-clip-text text-transparent text-xl md:text-4xl">
+            CRAFTING EXCELLENCE, TAILORED FOR YOU: EXPLORE OUR SPECIALIZED
+            SERVICES.
+          </p>
         </div>
-        <div className="px-[5vw]">
+
+        <div className="space-y-5">
+          <Services
+            number={"01"}
+            title={"Expertise Services"}
+            description={
+              "Custom blockchain solutions built for enterprise needs with smart contract functionality to revolutionize your business processes."
+            }
+            openAccordion={openAccordion}
+            setOpenAccordion={setOpenAccordion}
+          />
+          <Services
+            number={"02"}
+            title={"Expertise Services"}
+            description={
+              "Native and cross-platform mobile applications that deliver exceptional user experience across iOS and Android devices."
+            }
+            openAccordion={openAccordion}
+            setOpenAccordion={setOpenAccordion}
+          />
+          <Services
+            number={"03"}
+            title={"Process"}
+            description={
+              "Leverage the power of artificial intelligence to automate processes, gain insights, and create intelligent systems for your business."
+            }
+            openAccordion={openAccordion}
+            setOpenAccordion={setOpenAccordion}
+          />
+        </div>
+      </div>
+    </div>
+        <div className="mx-[5vw]">
           <AboutUs />
         </div>
       </div>
